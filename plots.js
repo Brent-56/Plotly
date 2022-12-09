@@ -113,6 +113,7 @@ function init() {
       // 10. Use Plotly to plot the data with the layout. 
       Plotly.newPlot("bar", barTrace, barLayout, {responsive: true});
 
+      //Deliverable 2
       // 1. Create the trace for the bubble chart.
     var bubbleData = [{
       x: otu_Ids,
@@ -140,6 +141,7 @@ function init() {
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout, {responsive: true});
 
+    //Deliverable 3
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
     var metadata_SelId = data.metadata.filter(data => data.id == sample);
     console.log(metadata_SelId);  
